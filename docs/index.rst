@@ -10,8 +10,6 @@ Welcome to Michael Alfield's Eco-Libre Volunteer Test Documentation
    :maxdepth: 2
    :caption: Contents:
 
-   autodoc
-
 Indices and tables
 ==================
 
