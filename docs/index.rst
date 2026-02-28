@@ -12,6 +12,11 @@ Michael Alfield's Eco-Libre Volunteer Test
 
 This documentation is the final deliverable of the Eco-Libre Volunteer Test, preformed by Michael Altfield.
 
+.. figure:: /eco-libre-volunteer-test2.jpg
+  :align: center
+
+  Screenshot of the FreeCAD object with my initials carved into them, as required by the Eco-Libre Volunteer Test
+
 The purpose of this test is to demonstrate experience with all of the tools necessary to be successful as a volunteer with Eco-Libre. These tools include: GNU/Linux, git, FreeCAD, recordmydesktop, kdenlive, and PeerTube. The test also demonstrates a familiarity with open-source licensing, specifically the `Creative Commons Attribution-ShareAlike 4.0 International <https://creativecommons.org/licenses/by-sa/4.0/>`_ license, under which all of Eco-Libre's works are licensed.
 
 Other key tools that are necessary for volunteering with Eco-Libre, but were not included in this test for brevity and simplicity, include inkscape, gimp, audacity, wordpress, and mediawiki.
