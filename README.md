@@ -1,4 +1,4 @@
-![docs_pages_workflow](https://github.com/maltfield/eco-libre-volunteer-test/workflows/docs_pages_workflow/badge.svg?branch=master)
+![docs_pages_workflow](https://github.com/maltfield/eco-libre-volunteer-test/workflows/docs_pages_workflow/badge.svg?branch=main)
 
 # Michael Alfield’s Eco-Libre Volunteer Test
 
