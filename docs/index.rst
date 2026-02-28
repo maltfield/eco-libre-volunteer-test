@@ -25,14 +25,14 @@ Please see the video below showing how I carved my initials into the sheet of me
 Pain Points
 -----------
 
-This section will document the issues I had with completing the Eco-Libre Volunter Test. I'm writing this to help the next person, who can review prior volunteers' tests for guidance.
+This section will document the issues I had with completing the Eco-Libre Volunteer Test. I'm writing this to help the next person, who can review prior volunteers' tests for guidance.
 
 Linux
 ^^^^^
 
 I had some issues installing Linux as an HVM on my system running Qubes. First I used Linux Mint, but then I found that ``freecad`` is not available in the apt repos.
 
-I spent some time researching alterantive Linux Distros that are based on Debian and default to xfce. I'm not sure if all of these satisfy these two requirements, but initial searching suggested MX Linux, Peppermint Linux, Xubuntu, Linux Lite, Void Linux, and ExTiX Linux.
+I spent some time researching alternative Linux Distros that are based on Debian and default to xfce. I'm not sure if all of these satisfy these two requirements, but initial searching suggested MX Linux, Peppermint Linux, Xubuntu, Linux Lite, Void Linux, and ExTiX Linux.
 
 After considering these options, I decided to ditch xfce when I found-out that cinnamon was created after the gnome UI changes in v3. I read that cinnamon was similar to xfce.
 
@@ -43,7 +43,7 @@ Installing LMDE failed on the first time, because Qubes gives it three disks, an
 Sphinx
 ^^^^^^
 
-I had some issues getting this sphinx documenation site to build in GitHub.
+I had some issues getting this sphinx documentation site to build in GitHub.
 
 I started by copying all of the files from `this repo <https://github.com/maltfield/rtd-github-pages>`_, as described in `this article <https://tech.michaelaltfield.net/2020/07/18/sphinx-rtd-github-pages-1/>`_
 
@@ -59,6 +59,6 @@ I had a permissions issue on the CI workflow, which tried to create a new 'gh-pa
 
 After the GitHub CI container had permissions, the site failed to redirect because `GitHub changed 'master' to 'main' <https://github.com/github/renaming>`_, so I `had to change <https://github.com/maltfield/eco-libre-volunteer-test/commit/eca22a0a76a21f1202490b6b643bbcd768860663>`_ the script to say ``main`` instead of ``master``.
 
-I then had some trouble embedding the PeerTube video. I wanted to use an existing open-source directive, but both of them were broken for different reasons (see `commit history <https://github.com/maltfield/eco-libre-volunteer-test/commits/main/?since=2026-02-27&until=2026-02-27>`_ for more details). In the end, I just settled by pasing the "embed" code into a `raw directive <https://docutils.sourceforge.io/docs/ref/rst/directives.html#raw-data-pass-through>`_.
+I then had some trouble embedding the PeerTube video. I wanted to use an existing open-source directive, but both of them were broken for different reasons (see `commit history <https://github.com/maltfield/eco-libre-volunteer-test/commits/main/?since=2026-02-27&until=2026-02-27>`_ for more details). In the end, I just settled by passing the "embed" code into a `raw directive <https://docutils.sourceforge.io/docs/ref/rst/directives.html#raw-data-pass-through>`_.
 
 These issues should not be problems for subsequent users, as the intention of me doing this test is so that future volunteers can simply clone `this git repo <https://github.com/maltfield/eco-libre-volunteer-test/>`_, which has already solved *most* of these problems (thought permissions issues in GitHub, as described above, may change again in the future).
