@@ -17,4 +17,5 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-TODO: embed peertube video
+.. peertube:: 50d9585c-a912-4b1d-94c9-b7a09a456187
+   :instance: peertube.linuxrocks.online
