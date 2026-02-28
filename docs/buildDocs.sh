@@ -8,8 +8,8 @@ set -x
 #
 # Authors: Michael Altfield <michael@michaelaltfield.net>
 # Created: 2020-07-17
-# Updated: 2023-03-26
-# Version: 0.3
+# Updated: 2026-02-27
+# Version: 0.4
 ################################################################################
  
 ###################
@@ -19,11 +19,7 @@ set -x
 apt-get update
 apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme python3-stemmer python3-git python3-pip python3-virtualenv python3-setuptools
 
-# create python virtual environment and install depends there
-python3 -m virtualenv /tmp/eco-libre-python-venv --system-site-packages
-source /tmp/eco-libre-python-venv/bin/activate
- 
-python3 -m pip install --upgrade rinohtype pygments Sphinx sphinxcontrib-youtube
+python3 -m pip install --upgrade rinohtype pygments
  
 #####################
 # DECLARE VARIABLES #
