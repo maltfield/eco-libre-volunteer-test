@@ -43,4 +43,21 @@ Installing LMDE failed on the first time, because Qubes gives it three disks, an
 Sphinx
 ^^^^^^
 
-TODO
+I had some issues getting this sphinx documenation site to build in GitHub.
+
+I started by copying all of the files from `this repo <https://github.com/maltfield/rtd-github-pages>`_, as described in `this article <https://tech.michaelaltfield.net/2020/07/18/sphinx-rtd-github-pages-1/>`_
+
+I had a permissions issue on the CI workflow, which tried to create a new 'gh-pages' branch and push to it. This is because GitHub changed the UI/process required to get the CI to run properly. The solution was found in commit a07329b76d7017cc5171ddf321deec0b148f4bbb:
+
+    I attempted to fix this from the GitHub WUI by going to:
+
+    Repo -> Settings -> Actions -> General -> Workflow permissions
+
+     * https://github.com/maltfield/eco-libre-volunteer-test/settings/actions
+
+    On that page, I changed it from "Read repository contents and packages permi
+ssions" to "Read and write permissions"
+
+After the GitHub CI container had permissions, the site failed to redirect because `GitHub changed 'master' to 'main' <https://github.com/github/renaming>`_, so I `had to change <https://github.com/maltfield/eco-libre-volunteer-test/commit/eca22a0a76a21f1202490b6b643bbcd768860663>`_ the script to say ``main`` instead of ``master``.
+
+I then had some trouble embedding the PeerTube video. I wanted to use an existing open-source directive, but both of them were broken for different reasons (see `commit history <https://github.com/maltfield/eco-libre-volunteer-test/commits/main/?since=2026-02-27&until=2026-02-27>`_ for more details). In the end, I just settled by pasing the "embed" code into a `raw directive <https://docutils.sourceforge.io/docs/ref/rst/directives.html#raw-data-pass-through>`_.
