@@ -49,13 +49,16 @@ I started by copying all of the files from `this repo <https://github.com/maltfi
 
 I had a permissions issue on the CI workflow, which tried to create a new 'gh-pages' branch and push to it. This is because GitHub changed the UI/process required to get the CI to run properly. The solution was described in `commit a07329b76d7017cc5171ddf321deec0b148f4bbb <https://github.com/maltfield/eco-libre-volunteer-test/commit/a07329b76d7017cc5171ddf321deec0b148f4bbb>`_
 
-        I attempted to fix this from the GitHub WUI by going to:
+::
 
-        Repo -> Settings -> Actions -> General -> Workflow permissions
-
-        * https://github.com/maltfield/eco-libre-volunteer-test/settings/actions
-
-        On that page, I changed it from "Read repository contents and packages permissions" to "Read and write permissions"
+   I attempted to fix this from the GitHub WUI by going to:
+   
+   Repo -> Settings -> Actions -> General -> Workflow permissions
+   
+   * https://github.com/maltfield/eco-libre-volunteer-test/settings/actions
+   
+   On that page, I changed it from "Read repository contents and
+   packages permissions" to "Read and write permissions"
 
 After the GitHub CI container had permissions, the site failed to redirect because `GitHub changed 'master' to 'main' <https://github.com/github/renaming>`_, so I `had to change <https://github.com/maltfield/eco-libre-volunteer-test/commit/eca22a0a76a21f1202490b6b643bbcd768860663>`_ the script to say ``main`` instead of ``master``.
 
