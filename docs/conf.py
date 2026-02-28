@@ -19,8 +19,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'helloWorld'
-copyright = '2020, Michael Altfield'
+project = 'maltfield-volunteer-test'
+copyright = '2026, Michael Altfield'
 author = 'Michael Altfield'
 
 # The short X.Y version
@@ -133,7 +133,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'helloWorld.tex', 'helloWorld Documentation',
+    (master_doc, 'helloWorld.tex', "MA's Volunteer Test",
      'Michael Altfield', 'manual'),
 ]
 
