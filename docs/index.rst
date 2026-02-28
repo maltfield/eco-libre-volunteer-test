@@ -47,7 +47,7 @@ I had some issues getting this sphinx documenation site to build in GitHub.
 
 I started by copying all of the files from `this repo <https://github.com/maltfield/rtd-github-pages>`_, as described in `this article <https://tech.michaelaltfield.net/2020/07/18/sphinx-rtd-github-pages-1/>`_
 
-I had a permissions issue on the CI workflow, which tried to create a new 'gh-pages' branch and push to it. This is because GitHub changed the UI/process required to get the CI to run properly. The solution was found in commit a07329b76d7017cc5171ddf321deec0b148f4bbb:
+I had a permissions issue on the CI workflow, which tried to create a new 'gh-pages' branch and push to it. This is because GitHub changed the UI/process required to get the CI to run properly. The solution was found in `commit a07329b76d7017cc5171ddf321deec0b148f4bbb <https://github.com/maltfield/eco-libre-volunteer-test/commit/a07329b76d7017cc5171ddf321deec0b148f4bbb>`_:
 
     I attempted to fix this from the GitHub WUI by going to:
 
